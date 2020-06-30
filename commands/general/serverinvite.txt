@@ -1,0 +1,33 @@
+const Discord = require("discord.js");
+const ms = require("ms");
+
+module.exports = {
+  name: "serverinvite",
+  category: "General",
+  permLevel: "User",
+  description: "Invite your friend to this server",
+  usage: "serverinvite",
+  cooldown: "3",
+  aliases: ["sinvite"],
+  run: async (client, message, args) => {
+    
+    let invite = await message.channel.createInvite({
+      maxAge: args.age,
+      maxUses: args.uses
+    });
+
+    const embed = new Discord.MessageEmbed()
+      .setColor("#00a5ff")
+      .setDescription(`**📧 Server Invite Link Generated...**`)
+      .setTimestamp();
+
+    await message.channel.send(embed);
+
+    let si = "2s";
+    setTimeout(function() {
+      message.channel.send(
+        `\`\`\`js\nhttps://discord.gg/${invite.code}\n\`\`\``
+      );
+    }, ms(si));
+  }
+};

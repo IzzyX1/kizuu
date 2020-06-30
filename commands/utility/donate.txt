@@ -1,0 +1,44 @@
+const Discord = require("discord.js")
+
+module.exports = {
+  name: "donate",
+  category: "Utility",
+  usage: "donate",
+  cooldown: "3",
+  permLevel: "User",
+  description: "Want to support us?",
+  run: async (client, message, args, ops, level) => {
+    
+        message.channel.send({
+          embed: {
+            title: `Support us with donations`,
+            thumbnail: {
+              url: client.user.displayAvatarURL()
+            },
+            fields: [
+              {
+                name: "Virtual Cash (Go-Pay/OVO/LinkAja/Dana)",
+                value: "https://trakteer.id/senko",
+              },
+              {
+                name: "Bank",
+                value: "BNI: **072-416-5007** a.n Ixxxx Bxxx Fxxxxxxx Sxxxxxx",
+              },
+              {
+                name: "Pulsa (Dikenakan biaya tambahan +15%)",
+                value: "Telkomsel: **0852-3425-2627**",
+              },
+              {
+                name: "Growtopia",
+                value: "World: **KieChan**",
+              },
+            ],
+            color: "#00a5ff",
+            footer: {
+              text: "Up to dated on June 19, 2020"
+            },
+          }
+        })
+        
+      }
+}

@@ -1,0 +1,54 @@
+{
+  "name": "kizuu-san",
+  "version": "1.0.1",
+  "description": "Discord Bot that made with love.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "dotenv": "^8.2.0",
+    "fs": "^0.0.2",
+    "ascii-table": "^0.0.9",
+    "imdb-api": "^4.0.3",
+    "quick.db": "^7.1.1",
+    "request-promise-native": "^1.0.8",
+    "weather-js": "^2.0.0",
+    "anime-scraper": "^3.1.1",
+    "mongoose": "^5.9.20",
+    "common-tags": "^1.8.0",
+    "node-fetch": "^2.6.0",
+    "http": "^0.0.0",
+    "ms": "^2.1.2",
+    "moment": "^2.27.0",
+    "moment-duration-format": "^2.2.2",
+    "parse-ms": "^2.0.0",
+    "path": "^0.12.7",
+    "nekos.life": "^2.0.7",
+    "mathjs": "^7.0.2",
+    "node-superfetch": "^0.1.10",
+    "enmap": "^5.3.1",
+    "chalk": "^4.1.0",
+    "util": "^0.12.3",
+    "moment-timezone": "^0.5.31",
+    "discord.js": "^12.2.0",
+    "nekobot-api": "^1.1.7",
+    "mysql": "^2.18.1"
+  },
+  "engines": {
+    "node": "12.x"
+  },
+  "repository": {
+    "url": "https://glitch.com/edit/#!/kizuu-bot"
+  },
+  "license": "MIT",
+  "keywords": [
+    "node",
+    "glitch",
+    "express"
+  ],
+  "devDependencies": {},
+  "author": ""
+}
